@@ -1,5 +1,6 @@
 import os
 import datetime
+import sys
 
 import numpy as np
 import torch
@@ -15,6 +16,8 @@ from utils.callbacks import LossHistory, EvalCallback
 from utils.dataloader import SegmentationDataset, seg_dataset_collate
 from utils.utils import download_weights, show_config
 from utils.utils_fit import fit_one_epoch
+
+sys.path.append()
 
 '''
 训练自己的语义分割模型一定需要注意以下几点：
